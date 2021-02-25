@@ -1,0 +1,6 @@
+tam_Area = float(input("Qual tamanho da área a ser pintada? "))
+quant_Litros = float(tam_Area/3)
+quant_Latas = int(quant_Litros/18)
+valor_Latas = float(quant_Latas * 80)
+print(f"----Quantidade de Latas: {quant_Latas}")
+print(f"----Preço Total: {valor_Latas}")
