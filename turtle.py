@@ -15,24 +15,15 @@ print("\t2, 3, 5...")
 tess.pensize(int(input("Espessura da caneta: ")))    # define a espessura da caneta
 
 alex = turtle.Turtle()           # cria alex
+for aColor in ["yellow", "red", "purple", "blue"]:  # repita 4 vezes
+    alex.forward(50)
+    alex.left(90)
 
-tess.forward(80)                 # tess desenha um triângulo equilátero
-tess.left(120)
-tess.forward(80)
-tess.left(120)
-tess.forward(80)
-tess.left(120)                   # complete o triângulo
+for i in [0,1,2,3]:      # repita 4 vezes
+    tess.forward(50)
+    tess.left(90)               # tess se move para longe da origem
 
-tess.right(180)                  # tess muda de direção
-tess.forward(80)                 # tess se move para longe da origem
 
-alex.forward(50)                 # alex desenha um quadrado
-alex.left(90)
-alex.forward(50)
-alex.left(90)
-alex.forward(50)
-alex.left(90)
-alex.forward(50)
-alex.left(90)
+
 
 wn.exitonclick()
